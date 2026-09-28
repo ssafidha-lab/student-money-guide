@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Money Guide</title>
+<style>
+:root{--green:#5f806b;--cream:#f7f1e5;--brown:#3f342b;--white:#fff;--light:#e8eee9}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--brown);background:var(--cream);line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:var(--white);position:sticky;top:0;z-index:5}
+.logo{font-weight:800;color:var(--green);font-size:1.2rem}nav a{margin-left:22px;color:var(--brown);text-decoration:none;font-size:.95rem}
+.hero{padding:90px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center;background:linear-gradient(135deg,#f7f1e5,#e8eee9)}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;margin:10px 0;color:var(--brown)}
+h2{font-size:2rem;margin-top:0}.tag{color:var(--green);font-weight:700;letter-spacing:1px}
+.hero p{max-width:620px;font-size:1.08rem}.btn{display:inline-block;background:var(--green);color:white;padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:700;margin-top:12px}
+.budget-visual{background:var(--white);padding:28px;border-radius:24px;box-shadow:0 15px 40px #3f342b18}
+.progress{height:14px;background:#e5e5e5;border-radius:20px;overflow:hidden;margin:12px 0 22px}.progress span{display:block;height:100%;background:var(--green);width:50%}
+section{padding:70px 7%;max-width:1200px;margin:auto}.intro{text-align:center;max-width:800px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--white);padding:24px;border-radius:18px;box-shadow:0 8px 25px #3f342b10}.card h3{margin-top:8px}.amount{font-size:1.6rem;font-weight:800;color:var(--green)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px}.compare .card:first-child{border-top:5px solid var(--green)}.compare .card:last-child{border-top:5px solid #9a8065}
+ul{padding-left:20px}.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.rule .card{text-align:center}.percent{font-size:2.5rem;font-weight:800;color:var(--green)}
+.cta{text-align:center;background:var(--green);color:white;border-radius:24px;margin:50px 7%;max-width:none}.cta h2{margin-bottom:8px}.cta .btn{background:white;color:var(--green)}
+footer{text-align:center;padding:28px;background:var(--brown);color:white}
+@media(max-width:800px){nav{padding:16px 5%}nav a{display:none}.hero{grid-template-columns:1fr;padding:65px 5%}section{padding:55px 5%}.cards{grid-template-columns:1fr 1fr}.compare,.rule{grid-template-columns:1fr}.cta{margin:35px 5%}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.hero{padding-top:45px}h1{font-size:2.8rem}}
+</style>
+</head>
+<body>
+<nav><div class="logo">Student Money Guide</div><div><a href="#budget">Budget</a><a href="#tips">Tips</a><a href="#rule">50/30/20</a></div></nav>
+
+<header class="hero">
+<div>
+<div class="tag">LEARN • BUDGET • SAVE</div>
+<h1>Small Savings, Better Future.</h1>
+<p>Managing money as a student does not have to be complicated. Learn simple budgeting and saving habits that can help you make better financial decisions every month.</p>
+<a class="btn" href="#budget">Start Budgeting</a>
+</div>
+<div class="budget-visual">
+<h3>Example Monthly Budget</h3>
+<p><strong>Monthly income</strong></p><div class="amount">₹10,000</div>
+<div class="progress"><span></span></div>
+<p>Needs ₹5,000 • Wants ₹3,000 • Savings ₹2,000</p>
+</div>
+</header>
+
+<section>
+<div class="intro"><h2>Why Budgeting Matters</h2><p>Budgeting helps students understand where their money goes. It makes it easier to control unnecessary spending, plan for important expenses, and build a regular saving habit.</p></div>
+</section>
+
+<section id="budget">
+<h2>Build Your Monthly Budget</h2>
+<div class="cards">
+<div class="card"><div class="amount">₹10,000</div><h3>Monthly Income</h3><p>Your available money for the month.</p></div>
+<div class="card"><div class="amount">₹5,000</div><h3>Needs</h3><p>Essential everyday expenses.</p></div>
+<div class="card"><div class="amount">₹3,000</div><h3>Wants</h3><p>Non-essential spending.</p></div>
+<div class="card"><div class="amount">₹2,000</div><h3>Savings</h3><p>Money kept aside for the future.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Needs vs Wants</h2>
+<div class="compare">
+<div class="card"><h3>Essential Needs</h3><ul><li>Food</li><li>Transportation</li><li>Study materials</li><li>Phone recharge</li></ul></div>
+<div class="card"><h3>Optional Wants</h3><ul><li>Eating out</li><li>Entertainment</li><li>Shopping</li><li>Unnecessary subscriptions</li></ul></div>
+</div>
+</section>
+
+<section id="tips">
+<h2>Smart Saving Tips</h2>
+<div class="cards">
+<div class="card"><h3>📝 Track Every Expense</h3><p>Write down your daily spending so you know where your money goes.</p></div>
+<div class="card"><h3>📅 Set a Weekly Limit</h3><p>Decide how much you can comfortably spend each week.</p></div>
+<div class="card"><h3>🛍️ Avoid Unnecessary Purchases</h3><p>Pause before buying something and ask whether you really need it.</p></div>
+<div class="card"><h3>💰 Save Before Spending</h3><p>Keep a small amount aside as soon as you receive your money.</p></div>
+</div>
+</section>
+
+<section id="rule">
+<h2>The 50/30/20 Rule</h2>
+<div class="rule">
+<div class="card"><div class="percent">50%</div><h3>Needs</h3><p>Essential expenses such as food, transport and study materials.</p></div>
+<div class="card"><div class="percent">30%</div><h3>Wants</h3><p>Non-essential spending such as entertainment and shopping.</p></div>
+<div class="card"><div class="percent">20%</div><h3>Savings</h3><p>Money kept aside for future needs and goals.</p></div>
+</div>
+</section>
+
+<section class="cta"><h2>Start with a small saving today.</h2><p>Good money habits begin with small, consistent steps.</p><a class="btn" href="#budget">Review My Budget</a></section>
+<footer>Student Money Guide • Learn. Budget. Save.</footer>
+</body>
+</html>
